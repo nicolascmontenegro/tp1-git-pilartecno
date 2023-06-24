@@ -20,7 +20,14 @@ function extractValues(data) {
 
 function arrayToLengthCounters(array) {
   // Tu código aquí
+  const result = {};
+  for (let i = 0; i < array.length; i++) {
+    const str = array[i];
+    result[str] = str.length;
+  }
+  return result;
 }
+
 
 /*  
   Ejercicio 3: 
